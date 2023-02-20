@@ -2952,7 +2952,8 @@ input, select, textarea {
 
 /* Spotlight */
 
-	.spotlight {
+	/* .spotlight {
+		height: 100%;
 		background-attachment: fixed;
 		background-position: center center;
 		background-size: cover;
@@ -2960,7 +2961,7 @@ input, select, textarea {
 		min-height: 100vh;
 		overflow: hidden;
 		position: relative;
-	}
+	} */
 /*
 		.spotlight:nth-last-of-type(1) {
 			z-index: 1;
@@ -3544,8 +3545,15 @@ input, select, textarea {
 				}
 
 /* one */
-#one .content {
-	z-index: 10;
+
+#one {
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center center;
 	background-image: url('../../images/img.jpg');
-	background-size: contain;
+	background-size:cover;
+	box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+	min-height: 100vh;
+	overflow: hidden;
+	position: relative;
 }
