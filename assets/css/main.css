@@ -130,9 +130,9 @@ input, select, textarea {
 		font-style: italic;
 	}
 
-	p {
+	/* p {
 		margin: 0 0 2em 0;
-	}
+	} */
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
@@ -3209,23 +3209,21 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		height: 100%;
+		height: 100vh;
 		text-align: center;
 	}
 
 	#banner .content {
-		height: 100%;
 		position: relative;
 	}
 	#banner .content video {
 		align-content: center;
 		width: 100%;
-		height: 100%;
 		z-index: -10;
 		filter: brightness(30%);
 	}
 
-	#banner .content .text {
+	#banner .content .wrap {
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -3234,20 +3232,20 @@ input, select, textarea {
 		transform: translate( -50%, -50% );
 		z-index: 21;
 	}
-	#banner .content .text #en {
+	#banner .content .wrap #en {
 		font-family: 'IM Fell Great Primer', serif;
 		font-size:20px;
 		line-height: 30px;
 	}
-	#banner .content .text #en .highlight {
+	#banner .content .wrap #en .highlight {
 		color: #D9FCDB;
 	}
-	#banner .content .text #kr {
+	#banner .content .wrap #kr {
 		font-family: 'Noto Serif KR', serif;
 		font-size:20px;
 		line-height: 30px;
 	}
-	#banner .content .text #kr .highlight {
+	#banner .content .wrap #kr .highlight {
 		display: inline;
 		color:#1c1d26;
 		font-weight: bold;
@@ -3314,15 +3312,62 @@ input, select, textarea {
 
 /* one */
 
-#one .bg {
+#one {
+	height: 100vh;
+	text-align: center;
+	width: 100%;
+}
+
+#one .content {
+	width: 100%;
+	position: relative;
+}
+
+#one .content .bg {
 	height: 100%;
 	background-attachment: fixed;
 	background-position: center center;
 	background-image: url('../../images/img.jpg');
 	min-height: 100vh;
 }
-
-#one .bg .content {
-	min-height: 100vh;
+#one .content .bg .bgcontent{
 	background-color: rgba(0, 0, 0, 0.6);
+	min-height: 100vh;
+	width: 100%;
+	z-index: -1;
+}
+#one .content .wrap {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-align: left;
+	font-size: 48px; color: #ffffff;
+	transform: translate( -50%, -50% );
+	z-index: 21;
+}
+#one .content .wrap .text{
+	/* float: right;
+	clear: both; */
+	vertical-align: middle;
+	align-items: center;
+}
+
+#one .wrap .text #en{
+	font-size:40px;
+	line-height: 50px;
+}
+
+#one .wrap .text #kr{
+	font-family: 'Noto Serif KR', serif;
+	font-size:20px;
+	line-height: 30px;
+}
+
+#myimg {
+	clear: both;
+	float: left;
+	width: 10vw;
+	border-radius: 40%;
+	margin-right: 10vw;
 }
