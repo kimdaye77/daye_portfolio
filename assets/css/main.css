@@ -3125,12 +3125,8 @@ input, select, textarea {
 
 /* Header */
 
-	#page-wrapper {
-		padding-top: 3.5em;
-	}
-
 	#header {
-		background: rgba(39, 40, 51, 0.965);
+		background-color: rgba(0, 0, 0, 0.55);
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.25);
 		cursor: default;
 		height: 3.5em;
@@ -3196,20 +3192,10 @@ input, select, textarea {
 						display: none;
 					}
 
-	body.landing #page-wrapper {
-		padding-top: 0;
-	}
-
-	body.landing #header {
-		background: transparent;
-		box-shadow: none;
-		position: absolute;
-	}
-
 /* Banner */
 
 	#banner {
-		height: 100vh;
+		min-height: 100vh;
 		text-align: center;
 	}
 
@@ -3337,7 +3323,7 @@ input, select, textarea {
 	z-index: -1;
 }
 #one .content .wrap {
-	width: 100%;
+	min-width: 55vw;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -3347,27 +3333,26 @@ input, select, textarea {
 	z-index: 21;
 }
 #one .content .wrap .text{
-	/* float: right;
-	clear: both; */
+	float: right;
+	height: 50vh;
 	vertical-align: middle;
 	align-items: center;
 }
 
 #one .wrap .text #en{
 	font-size:40px;
-	line-height: 50px;
+	line-height: 40px;
 }
 
 #one .wrap .text #kr{
+	margin-top: 5vh;
 	font-family: 'Noto Serif KR', serif;
 	font-size:20px;
-	line-height: 30px;
+	line-height:30px;
 }
 
 #myimg {
-	clear: both;
 	float: left;
 	width: 10vw;
 	border-radius: 40%;
-	margin-right: 10vw;
 }
